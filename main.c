@@ -166,12 +166,12 @@ void recherche(){
        }
 }
 void calculerMoyenneAge() {
-    int sommeAge = 0;
+    int somme = 0;
     for (int i = 0; i < x; i++) {
-        sommeAge += age[i];
+        somme += age[i];
     }
-    int moyenneAge = sommeAge / x;
-    printf("La moyenne d'âge des patients ayant réservé est de %d ans.\n", moyenneAge);
+    int moyenne = somme / x;
+    printf("La moyenne d'Ã¢ge des patients ayant rÃ©servÃ© est de %d ans.\n", moyenne);
     return;
 }
 void afficherPatientsParTrancheAge() {
@@ -187,7 +187,7 @@ void afficherPatientsParTrancheAge() {
             patients36Plus++;
         }
     }
-    printf("Nombre de patients par tranche d'âge :\n");
+    printf("Nombre de patients par tranche d'Ã¢ge :\n");
     printf("  0-18 ans : %d patients\n", patients0_18);
     printf("  19-35 ans : %d patients\n", patients19_35);
     printf("  36+ ans : %d patients\n", patients36Plus);
@@ -195,7 +195,7 @@ void afficherPatientsParTrancheAge() {
 }
 void statistique(){
     printf("1_calcluer moyenne d'age\n");
-    printf("2_Afficher le nombre de patients par tranche d'âge\n");
+    printf("2_Afficher le nombre de patients par tranche d'Ã¢ge\n");
     int choix_st;
      printf("entrer your choix");
      scanf("%d",&choix_st);
@@ -216,7 +216,7 @@ int dixreservation(){
     char prenom_dixreservation[10][20] = {"barid", "elbarri", "hakim", "alaroui", "ait_mohamed", "chabab", "salim", "omar", "driss", "bnamar"};
     char telephon_dixreservation[10][14] = {"0123456789", "0987654321", "0123456789", "0987654321", "0123456789", "0987654321", "0123456789", "0987654321", "0123456789", "0987654321"};
     int age_dixreservation[10] = {25, 30, 28, 35, 22, 40, 38, 32, 29, 45};
-    char statut_dixreservation[10][20] = {"Valide", "Reporté", "Annulé", "Traité", "Valide", "Reporté", "Annulé", "Traité", "Valide", "Reporté"};
+    char statut_dixreservation[10][20] = {"Valide", "ReportÃ©", "AnnulÃ©", "TraitÃ©", "Valide", "ReportÃ©", "AnnulÃ©", "TraitÃ©", "Valide", "ReportÃ©"};
     char date_de_reservation_dixreservation[10][15] = {"2022-01-01", "2022-02-01", "2022-03-01", "2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-01"};
     for (int i = 0; i < 10; i++) {
         strcpy(nom[i], nom_dixreservation[i]);
